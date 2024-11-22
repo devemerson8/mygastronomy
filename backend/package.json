@@ -1,14 +1,11 @@
 {
-  "homepage": "https://devemerson8.github.io/mygastronomy",
   "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "start": "node src/index.js"
 
   },
   "keywords": [],
