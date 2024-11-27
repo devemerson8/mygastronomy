@@ -6,7 +6,7 @@ export default function orderServices() {
     const [ordersList, setOrdersList] = useState([])
 
    // const url = 'http://localhost:3000/orders'
-    const url = 'https://mygastronomybackend.vercel.app/orders'
+    const url = 'https://mygastronomybackend.onrender.com/orders'
 
     const getUserOrders = (userId) => {
         setOrderLoading(true)

@@ -6,7 +6,7 @@ export default function platesServices() {
     const [platesList, setPlatesList] = useState([])
 
   //  const url = 'http://localhost:3000/plates'
-    const url = 'https://mygastronomybackend.vercel.app/plates'
+    const url = 'https://mygastronomybackend.onrender.com/plates'
 
     const getAvailablePlates = (userId) => {
         setPlatesLoading(true)
