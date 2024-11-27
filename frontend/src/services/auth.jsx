@@ -4,7 +4,7 @@ export default function authServices() {
     const [authLoading, setAuthLoading] = useState(false)
 
     // const url = 'http://localhost:3000/auth'
-    const url = 'https://mygastronomybackend.onrender.com//auth'
+    const url = 'https://mygastronomybackend.onrender.com/auth'
 
     const login = (formData) => {
         setAuthLoading(true)
