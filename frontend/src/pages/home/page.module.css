@@ -4,36 +4,50 @@
     align-items: center;
     justify-content: center;
     gap: 2em;
-  padding: 2em;
+    padding: 2em;
 
+}
+
+.topSectionContainer {
+    text-align: center;
+}
+
+.topSession {
+    text-align: center;
+    font-size: 15pt;
 }
 
 .foodSection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
+    gap: 1.3em;
 	background-color: #754F44;
     color: #faf0ca;
     padding: 2em;
     border-radius: 2em;
+    text-align: center;
+  
 }
 
 .foodSection div {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 0.5em;
 }
 
+
 .socialButtonsContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.2em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding-top: 20px;
 }
 
 .socialButton {
-    font-size: large;
+    font-size: x-large;
     width: 100%;
+
 }
 
 .contactSection {
@@ -51,11 +65,12 @@
 @media screen and (max-width: 700px) {
     .foodSection {
         grid-template-columns: repeat(1, 1fr);
+        
     }
 }
 
 @media screen and (min-width: 1000px) {
     .socialButtonsContainer {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
