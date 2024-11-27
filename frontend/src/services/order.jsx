@@ -5,7 +5,8 @@ export default function orderServices() {
     const [refetchOrders, setRefetchOrders] = useState(true)
     const [ordersList, setOrdersList] = useState([])
 
-    const url = 'http://localhost:3000/orders'
+   // const url = 'http://localhost:3000/orders'
+    const url = 'https://mygastronomybackend.vercel.app/orders'
 
     const getUserOrders = (userId) => {
         setOrderLoading(true)
