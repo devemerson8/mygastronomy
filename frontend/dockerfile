@@ -1,0 +1,18 @@
+# Usando um tempo de execução oficial do Node.js como imagem pai
+FROM node:18-alpine
+
+# Definindo o diretório de trabalho no container
+WORKDIR /usr/src/app
+
+# Copiando package.json e o package-lock.json para o diretório de trabalho
+COPY package*.json ./
+
+# Instalando dependências da aplicação
+RUN npm install
+
+# Copiando o restante do código da aplicação para o diretório de trabalho (backend>app)
+COPY . .
+
+CMD ["npm", "run", "dev"]
+
+EXPOSE 3000

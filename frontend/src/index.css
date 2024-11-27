@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "Goudy Bookletter 1911", sans-serif;
+
+}
+
+#root {
+	font-size: x-large;
+	background-color: #ffffff;
+	color: #3f2b25;
+	min-height: 100vh;
+}
+
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+	min-height: 100vh;
+}
+
+button {
+	display: flex;
+	gap: 0.5em;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	background-color: #754F44;
+    color: #FDD692;
+	border: none;
+	padding: 1em;
+	border-radius: 0.5em;
+	cursor: pointer;
+	font-size: medium;
+}
+
+p {
+	display: flex;
+	gap: 0.5em;
+	text-align: justify;
+}
+
+h4 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: left;
+
+}

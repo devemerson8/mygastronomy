@@ -1,0 +1,57 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    max-width: 1280px;
+    padding: 2em;
+}
+
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: #754F44;
+    color: #ffffff;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+.ordersContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5em;
+}
+
+.pickupStatus {
+    border-radius: 0.5em;
+    width: fit-content;
+    padding: 0.5em;
+    font-size: large;
+}
+
+.pending {
+    background-color: #e1ce7a;
+    color: #3f2b25;
+}
+
+.completed {
+    background-color: #9ad618;
+    color: #3f2b25;
+}
+
+.canceled{
+    background-color: #d45b5b;
+    color: #3f2b25;
+}
+
+.platesLink {
+    color: #754F44;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .ordersContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
