@@ -1,85 +1,85 @@
 [
     {
-        "name":"Ensopado de Lulas com Ervilhas",
-        "price": 10.99,
+        "name":"Squid Stew with Peas",
+        "price":10.99,
         "available":false,
-        "description":"Lulas frescas cozinhadas lentamente num guisado com ervilhas frescas e tomates revelam uma explosão de sabores que o farão voltar para mais uma mordida!",
-        "ingredients":["Lulas frescas", "Ervilhas frescas", "Tomates"],
+        "description":"Fresh squid slowly cooked in a stew with fresh peas and tomatoes reveal an explosion of flavors that will make you come back for another bite!",
+        "ingredients":["Fresh squid","Fresh peas","Tomatoes"],
         "imgUrl":"/imgs/plates/squidStewwithPeas.png",
-        "category":"Principal"
+        "category":"First"
     },
     {
-        "name":"Tortellini em caldo de galinha",
+        "name":"Tortellini in Chicken Broth",
         "price": 8.99,
         "available":true,
-        "description":"Nosso tortellini caseiro, recheado com carne, flutua em um caldo de galinha quentinho, trazendo para você o conforto e o aconchego da verdadeira culinária italiana!",
-        "ingredients":["Tortellini caseiro", "Caldo de galinha"],
+        "description":"Our homemade tortellini, filled with meat, float in a warm chicken broth, bringing you the comfort and warmth of real Italian cuisine!",
+        "ingredients":["Homemade tortellini","Chicken broth"],
         "imgUrl":"/imgs/plates/tortellini.png",
-        "category":"Principal"
+        "category":"First"
     },
     {
-        "name":"Salada de Camarão e Legumes",
+        "name":"Shrimp and Vegetable Salad",
         "price":10.99,
         "available":true,
-        "description":"Uma salada mista fresca com camarão cozido, legumes da época e um molho secreto que fará brilhar o seu almoço ou jantar!",
-        "ingredients":["Camarão cozido", "Legumes da estação", "Molho para salada"],
+        "description":"A fresh mixed salad with cooked shrimp, seasonal vegetables, and a secret dressing that will make your lunch or dinner shine!",
+        "ingredients":["Cooked shrimp","Seasonal vegetables","Salad dressing"],
         "imgUrl":"/imgs/plates/shrimpandVegetableSalad.png",
-        "category":"Acompanhamento"
+        "category":"Side"
     },
     {
-        "name":"Salada de Frutos do Mar",
+        "name":"Seafood Salad",
         "price":7.99,
         "available":true,
-        "description":"Uma salada de marisco fresco com frutos do mar mistos, temperada com o ouro líquido do azeite virgem extra, irá levá-lo numa viagem de sabores que irá sempre recordar!",
-        "ingredients":["Misto de frutos do mar", "Azeite virgem extra"],
+        "description":"A fresh seafood salad with mixed seafood, dressed with the liquid gold of extra virgin olive oil, will take you on a taste journey you will always remember!",
+        "ingredients":["Mixed seafood","Extra virgin olive oil"],
         "imgUrl":"/imgs/plates/seafoodSalad.png",
-        "category":"Aperitivo"
+        "category":"Appetizer"
     },
     {
-        "name":"Lasanha à Bolonhesa",
+        "name":"Lasagna Bolognese",
         "price":11.99,
         "available":true,
-        "description":"Camadas de massa de ovo intercaladas com um rico molho de carne picada e um fofo molho bechamel. Lasanha à Bolonhesa vai fazer você se sentir em casa!",
-        "ingredients":["Béchamel sauce", "Minced meat sauce", "Egg pasta", "Basil"],
+        "description":"Layers of egg pasta interspersed with a rich minced meat sauce and a fluffy béchamel sauce. Lasagna Bolognese will make you feel at home!",
+        "ingredients":["Béchamel sauce","Minced meat sauce","Egg pasta","Basil"],
         "imgUrl":"/imgs/plates/lasagna.png",
-        "category":"Principal"
+        "category":"First"
     },
     {
-        "name":"Pão Integral",
+        "name":"Whole Grain Bread",
         "price":5.99,
         "available":true,
-        "description":"Pão integral acabado de cozer, crocante por fora e macio por dentro, perfeito para acompanhar todos os pratos!",
-        "ingredients":["Farinha integral", "Água", "Levedura", "Sal"],
+        "description":"Freshly baked whole grain bread, crispy on the outside and soft on the inside, perfect to enjoy with every dish!",
+        "ingredients":["Whole grain flour","Water","Yeast","Salt"],
         "imgUrl":"/imgs/plates/bread.png",
-        "category":"Outros"
+        "category":"Other"
     },
     {
         
         "available":true,
-        "category":"Adicional",
-        "description":"Almôndegas moídas e macias, imersas em molho de tomate e manjericão, farão você dizer 'Mamma mia!' depois de cada mordida!",
+        "category":"Second",
+        "description":"Soft ground meatballs, immersed in a tomato and basil sauce, will make you say 'Mamma mia!' after every bite!",
         "imgUrl":"/imgs/plates/meatBalls.png",
-        "ingredients":["Carne moída","Molho de tomate","Manjericão", "Manteiga"],
-        "name":"Almôndegas em Molho de Tomate",
+        "ingredients":["Ground meat","Tomato sauce","Basil", "Butter"],
+        "name":"Meatballs in Tomato Sauce",
         "price":11.99
     },
     {
         
         "price":8.99,
-        "description":"Peixe-espada fumado com legumes grelhados e sementes de sésamo, uma deliciosa combinação de sabores!",
-        "category":"Aperitivo",
+        "description":"Smoked swordfish with seared vegetables and sesame seeds, a delightful combination of flavors!",
+        "category":"Appetizer",
         "available":true,
-        "name":"Espadarte Defumado com Legumes Grelhados",
-        "ingredients":["Peixe-espada defumado", "Legumes grelhados", "Sementes de gergelim"],
+        "name":"Smoked Swordfish with Seared Vegetables",
+        "ingredients":["Smoked swordfish","Seared vegetables","Sesame seeds"],
         "imgUrl":"/imgs/plates/swordfish.png"
     },
     {
-        "name":"Salmão Grelhado",
+        "name":"Grilled Salmon",
         "price":16.99,
         "available":true,
-        "description":"Um delicioso filé de salmão fresco grelhado, acompanhado de uma mistura de vegetais que fará o seu paladar feliz!",
-        "ingredients":["Filé de salmão", "Mistura de legumes"],
+        "description":"A delicious grilled fresh salmon fillet, accompanied by a side of mixed vegetables that will make your palate happy!",
+        "ingredients":["Salmon fillet","Mixed vegetables"],
         "imgUrl":"/imgs/plates/grilledSalmon.png",
-        "category":"Adicional"
+        "category":"Second"
     }
 ]

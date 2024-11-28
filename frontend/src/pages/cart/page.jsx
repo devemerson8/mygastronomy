@@ -46,7 +46,7 @@ export default function Cart() {
         return(
             <div className={styles.cartContainer}> 
                 <h1>Seu carrinho está vazio...</h1>
-                <a href="/plates"><button>Clique e veja nossas especialidades!</button></a>
+                <a href="/"><button>Clique e veja nossas especialidades!</button></a>
                 
             </div>
         )

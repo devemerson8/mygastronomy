@@ -29,7 +29,7 @@ async function main () {
         res.send({
             success: true, 
             statusCode: 200,
-            body: 'Bem vindo ao My Gastronomy!'
+            body: 'Bem vindo ao MyGastronomy!'
         })
     })
 
