@@ -4,7 +4,6 @@ import styles from './page.module.css'
 import { LuMinusCircle } from 'react-icons/lu'
 import ConfirmOrderPopup from "../../components/confirmOrderPopup/confirmOrderPopup"
 import orderServices from "../../services/order"
-import { Link } from "react-router-dom"
 
 export default function Cart() {
 
@@ -65,7 +64,7 @@ export default function Cart() {
                                 <div className={styles.itemContent}>
                                     <h2>{item.name}</h2>
                                     <p>[{String(item.ingredients)}]</p>
-                                    <p>{item.description}</p>
+                                    
                                     <div className={styles.portionContainer}>
                                         <p>Porções:</p>
                                         <p>{item.quantity}</p>

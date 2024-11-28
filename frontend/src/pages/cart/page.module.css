@@ -59,16 +59,15 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .pageContainer {
-        gap: 1em;
-        padding: 1.5em;
+    .itemContent {
+        width: 80%;
+        font-size: medium;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .pageContainer {
-        gap: 1em;
-        padding: 1.5em;
-        
+@media screen and (max-width: 1080px) {
+    .itemContainer img {
+        width: 150px;
+        height: 300px;
     }
 }
