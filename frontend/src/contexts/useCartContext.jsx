@@ -14,9 +14,11 @@ export function CartProvider({ children }) {
             itemToAdd.quantity = 1
 
             setCartItems([...cartItems, itemToAdd])
-            console.log('Item adicionado corretamente')   
+          //  console.log('Item adicionado corretamente')  
+            alert('Prato adicionado ao carrinho com sucesso!') 
         } else {
-            console.log('O item já está no carrinho')   
+           // console.log('O item já está no carrinho')   
+            alert('O item já está no carrinho, caso deseje adicionar mais um parto  vá até o carrinho e altere a quantidade.') 
         }
     }
 
