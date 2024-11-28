@@ -11,7 +11,7 @@ export default function PlatePopup({ plateData, onClose, onAddToCart }) {
                     <h2>{plateData.name}</h2>
                     <p className={styles.ingredients}>[{String(plateData.ingredients)}] </p>
                     <p>{plateData.description}</p>
-                    <h2>$ {plateData.price}</h2>
+                    <h2>R$ {plateData.price}</h2>
                     <button onClick={() => { onAddToCart(plateData) }}>Adicionar ao carrinho</button>
                 </div>
             </div>
