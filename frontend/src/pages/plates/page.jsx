@@ -12,7 +12,6 @@ export default function Plates() {
     const [plateSelected, setPlateSelected] = useState(null)
     const { addToCart } = useCartContext()
 
-
     useEffect(() => {
         if(refetchPlates) {
             getAvailablePlates()
@@ -38,7 +37,16 @@ export default function Plates() {
 
     return (
         <>
-            <div>
+            <div className={styles.pageContainer}>
+                <section className={styles.topSectionContainer}>
+                    <h3>Que tal experimentar algo novo e delicioso?</h3>
+                    <br/>
+                    <p className={styles.topSession}>
+                        Não importa sua escolha, cada prato é preparado com amor e dedicação para tornar sua refeição inesquecível. Clique e escolhe o parto desejado! 
+                    </p>
+                </section>
+            </div>
+            <div className={styles.plateItemsContainer}>
                 {platesList.map((plate) => (
                     <div key={plate._id} className={styles.cardContainer} onClick={() => { handlePlateSelected(plate) }}>
                         <PlateCard plateData={plate} />

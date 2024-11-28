@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className={styles.footerContainer}>
             <img src="/imgs/logo.png" alt="" />
             <div>
-                <h2>Links Importantes:</h2>
+                <h3>Links importantes:</h3>
                 <div className={styles.linksContainer}>
                     <Link className={styles.link} to={'/'}>Home | </Link>
                     <Link className={styles.link} to={'/plates'}>Pratos |</Link>
