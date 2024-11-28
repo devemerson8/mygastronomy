@@ -4,6 +4,7 @@ import styles from './page.module.css'
 import { LuMinusCircle } from 'react-icons/lu'
 import ConfirmOrderPopup from "../../components/confirmOrderPopup/confirmOrderPopup"
 import orderServices from "../../services/order"
+import { Link } from "react-router-dom"
 
 export default function Cart() {
 
