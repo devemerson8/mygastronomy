@@ -57,3 +57,18 @@
     gap: 2em;
     padding: 2em;
 }
+
+@media screen and (max-width: 1080px) {
+    .pageContainer {
+        gap: 1em;
+        padding: 1.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .pageContainer {
+        gap: 1em;
+        padding: 1.5em;
+        
+    }
+}
