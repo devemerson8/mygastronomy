@@ -60,14 +60,32 @@
 
 @media screen and (max-width: 1080px) {
     .itemContent {
-        width: 80%;
+        width:70%;
         font-size: medium;
     }
 }
 
 @media screen and (max-width: 1080px) {
     .itemContainer img {
-        width: 150px;
+        width: 120px;
         height: 300px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .itemContent {
+        width: 70%;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .itemContainer img {
+        width: 150px;
+        height: 330px;
+    }
+}
+
+
+
+
