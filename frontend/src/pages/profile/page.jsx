@@ -34,13 +34,13 @@ export default function Profile() {
 
     return (
         <div className={styles.pageContainer}>
-            <div>
-                <h1>Meu Perfil</h1>
-                <h3>Nome: {authData?.user?.fullname}</h3>
-                <h3>E-mail: {authData?.user?.email}</h3>
+            <div className={styles.pagePerfilContainer}>
+                <h2>Meu perfil</h2>
+                <p>Nome: {authData?.user?.fullname}</p>
+                <p>E-mail: {authData?.user?.email}</p>
+                <button onClick={handleLogout}>Sair<LuLogOut /></button>
             </div>
 
-            <button onClick={handleLogout}>Sair<LuLogOut /></button>
 
             {ordersList.length > 0 ? 
                 <div className={styles.ordersContainer}>
