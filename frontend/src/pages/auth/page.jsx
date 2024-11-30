@@ -90,7 +90,7 @@ export default function Auth() {
                     <form onSubmit={handleSubmitForm}>
                         <TextField 
                         required
-                        label="Nome Completo"
+                        label="Nome"
                         type="fullname"
                         name="fullname"
                         onChange={handleFormDataChange}

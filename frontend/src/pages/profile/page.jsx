@@ -30,6 +30,7 @@ export default function Profile() {
         return navigate('/')
     }
 
+    
     console.log(ordersList)
 
     return (
@@ -38,7 +39,7 @@ export default function Profile() {
                 <h2>Meu perfil</h2>
                 <p>Nome: {authData?.user?.fullname}</p>
                 <p>E-mail: {authData?.user?.email}</p>
-                <button onClick={handleLogout}>Sair<LuLogOut /></button>
+                <button className={styles.buttonPerfilContainer} onClick={handleLogout}>Sair<LuLogOut /></button>
             </div>
 
 
