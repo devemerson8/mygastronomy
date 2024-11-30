@@ -1,10 +1,12 @@
 import { createContext, useContext, useState } from "react";
 import Swal from 'sweetalert2';
+import { useNavigate } from "react-router-dom";
 
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
     const [cartItems, setCartItems] = useState([]);
+    const navigate = useNavigate();
 
     const addToCart = (itemToAdd) => {
         const checkItemAlready = cartItems.find((cartItem) => {
@@ -13,18 +15,23 @@ export function CartProvider({ children }) {
 
         if (!checkItemAlready) {
             itemToAdd.quantity = 1;
-
             setCartItems([...cartItems, itemToAdd]);
-            // alert('Item adicionado corretamente');
+
             Swal.fire({
-                title: 'Sucesso!',
-                text: 'Prato adicionado ao carrinho com sucesso!',
+                title: 'Prato adicionado ao carrinho com sucesso!',
                 icon: 'success',
-                confirmButtonText: 'OK'
+                showCancelButton: true,
+                confirmButtonColor: '#3f2b25',
+                confirmButtonText: 'Ir ao carrinho',
+                cancelButtonText: 'Continuar comprando',
+                cancelButtonColor: '#B18842',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate('/cart'); // Redireciona para a página de pedidos
+                }
             });
 
         } else {
-            // alert('O item já está no carrinho');
             Swal.fire({
                 title: 'Atenção!',
                 text: 'O item já está no carrinho, caso deseje adicionar mais um prato vá até o carrinho e altere a quantidade.',

@@ -43,7 +43,7 @@ export default function ConfirmOrderPopup({ open, onClose, onConfirm }) {
             <div className={styles.popupContainer}>
                 <h1>Estamos quase lá...</h1>
                 <p>
-                    Confirme seu pedido com a data: <strong>{(new Date()).toLocaleDateString()}</strong>.
+                    Data atual: <strong>{(new Date()).toLocaleDateString()}</strong>.
                 </p>
                 <p>A que horas você virá buscar seu pedido?</p>
                 

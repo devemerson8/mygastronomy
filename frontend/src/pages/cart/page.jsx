@@ -1,55 +1,71 @@
-import { useState } from "react"
-import { useCartContext } from "../../contexts/useCartContext"
-import styles from './page.module.css'
-import { LuMinusCircle } from 'react-icons/lu'
-import ConfirmOrderPopup from "../../components/confirmOrderPopup/confirmOrderPopup"
-import orderServices from "../../services/order"
-import { Link } from "react-router-dom"
+import { useState } from "react";
+import { useCartContext } from "../../contexts/useCartContext";
+import styles from './page.module.css';
+import { LuMinusCircle } from 'react-icons/lu';
+import ConfirmOrderPopup from "../../components/confirmOrderPopup/confirmOrderPopup";
+import orderServices from "../../services/order";
+import { Link, useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 export default function Cart() {
-
-    const { cartItems, updateCartItems, removeFromCart, clearCart } = useCartContext()
-    const [confirmPopupOpen, setConfirmPopupOpen] = useState(false)
-    const { sendOrder } = orderServices()
+    const { cartItems, updateCartItems, removeFromCart, clearCart } = useCartContext();
+    const [confirmPopupOpen, setConfirmPopupOpen] = useState(false);
+    const { sendOrder } = orderServices();
+    const navigate = useNavigate();
 
     const handleChangeItemQty = (mode, itemId) => {
         const updatedCartItem = cartItems.map((item) => {
             if(item._id === itemId) {
                 if(mode === 'less' && item.quantity > 1) {
-                    item.quantity -= 1 
+                    item.quantity -= 1;
                 } else if (mode === 'more') {
-                    item.quantity += 1
+                    item.quantity += 1;
                 }
             }
-
-            return item 
-        })
-
-        updateCartItems(updatedCartItem)
-    }
+            return item;
+        });
+        updateCartItems(updatedCartItem);
+    };
 
     const handleOpenPopup = (e) => {
-        e.preventDefault()
-        setConfirmPopupOpen(!confirmPopupOpen)
-    }
+        e.preventDefault();
+        setConfirmPopupOpen(!confirmPopupOpen);
+    };
 
     const handleConfirmOrder = (orderData) => {
         orderData.items = cartItems.map((item) => {
-            return { plateId: item._id, quantity: item.quantity }
-        })
-        sendOrder(orderData)
-        setConfirmPopupOpen(!confirmPopupOpen)
-        clearCart()
-    }
+            return { plateId: item._id, quantity: item.quantity };
+        });
+        sendOrder(orderData);
+        setConfirmPopupOpen(!confirmPopupOpen);
+        clearCart();
+        handlePostOrder();
+    };
 
- 
+    const handlePostOrder = () => {
+        Swal.fire({
+            title: 'Pedido confirmado!',
+            text: 'Deseja ir voltar ao carrinho?',
+            icon: 'success',
+            showCancelButton: true,
+            confirmButtonText: 'Sim',
+            confirmButtonColor: '#3f2b25',
+            cancelButtonText: 'Cancelar',
+            cancelButtonColor: '#B18842',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                navigate('/cart');
+            }
+        });
+    };
+
     if(!cartItems.length) {
         return(
             <div className={styles.cartContainer}> 
                 <h1>Seu carrinho está vazio...</h1>
                 <Link to={'/plates'} className={styles.cartLink}>Clique aqui e veja as nossas especialidades!</Link>
             </div>
-        )
+        );
     }
 
     return (
@@ -85,6 +101,5 @@ export default function Cart() {
 
             <ConfirmOrderPopup open={confirmPopupOpen} onClose={handleOpenPopup} onConfirm={handleConfirmOrder}/>
         </>
-
-    )
+    );
 }
