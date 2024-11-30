@@ -14,7 +14,7 @@
 }
 
 .itemContainer {
-    display: grid;
+    display: flex;
     grid-template-columns: auto auto;
     gap: 1em;
 }
@@ -24,6 +24,7 @@
     height: 100%;
     border-radius: 1em;
     object-fit: cover;
+
 }
 
 .itemsListContainer {
@@ -61,7 +62,6 @@
 .confirmBtn {
     position: fixed;
     font-size: medium;
-   
     color: #754F44;
     background-color: #FDD692;
     bottom: 2em;
