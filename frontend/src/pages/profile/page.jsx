@@ -30,7 +30,6 @@ export default function Profile() {
         return navigate('/')
     }
 
-    
     console.log(ordersList)
 
     return (

@@ -16,7 +16,7 @@ export default function Navbar() {
 
     useEffect(() => {
         if (!authData) {
-            navigate('/auth');
+            navigate('/');
         } else if (refetchOrders) {
             getUserOrders(authData?.user?._id);
         }
