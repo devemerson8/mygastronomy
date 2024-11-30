@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-
 import Home from './pages/home/page.jsx'
 import Cart from './pages/cart/page.jsx'
 import Profile from './pages/profile/page.jsx'
