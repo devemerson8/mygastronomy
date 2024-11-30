@@ -54,7 +54,7 @@ export default function ConfirmOrderPopup({ open, onClose, onConfirm }) {
                     />
                     <div className={styles.confirmBtns}>
                         <button onClick={handleConfirm}>Confirmar</button>
-                        <button className={styles.cancelBtn} onClick={onClose}>Cencelar</button>
+                        <button className={styles.cancelBtn} onClick={onClose}>Cancelar</button>
                     </div>
                 </form>
             </div>

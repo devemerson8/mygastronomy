@@ -61,7 +61,7 @@ export const useCartContext = () => {
     const context = useContext(CartContext);
 
     if (!context) {
-        console.log('você está fora do contexto do carrinho');
+        alert('você está fora do contexto do carrinho');
     }
 
     return context;
