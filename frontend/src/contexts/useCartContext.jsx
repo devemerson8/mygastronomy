@@ -15,7 +15,7 @@ export function CartProvider({ children }) {
             itemToAdd.quantity = 1;
 
             setCartItems([...cartItems, itemToAdd]);
-            // console.log('Item adicionado corretamente');
+            // alert('Item adicionado corretamente');
             Swal.fire({
                 title: 'Sucesso!',
                 text: 'Prato adicionado ao carrinho com sucesso!',
@@ -24,7 +24,7 @@ export function CartProvider({ children }) {
             });
 
         } else {
-            // console.log('O item já está no carrinho');
+            // alert('O item já está no carrinho');
             Swal.fire({
                 title: 'Atenção!',
                 text: 'O item já está no carrinho, caso deseje adicionar mais um prato vá até o carrinho e altere a quantidade.',
