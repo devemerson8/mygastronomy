@@ -35,7 +35,7 @@ export default function Profile() {
     return (
         <div className={styles.pageContainer}>
             <div>
-                    <h1>Meu Perfil</h1>
+                <h1>Meu Perfil</h1>
                 <h3>Nome: {authData?.user?.fullname}</h3>
                 <h3>E-mail: {authData?.user?.email}</h3>
             </div>

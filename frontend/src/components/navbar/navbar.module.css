@@ -30,6 +30,12 @@
     padding: 0.5em;
 }
 
+.navbarLinksContainer {
+    font-size: large;
+    color: #FDD692;
+}
+
+
 .mobileNavbarItems {
     display: none;
 }

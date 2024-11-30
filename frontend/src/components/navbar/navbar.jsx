@@ -26,6 +26,8 @@ export default function Navbar() {
                     <Link to={'/profile'}>
                         <LuUserCircle className={styles.navbarLink} />
                     </Link>
+                    <div>
+            </div>
                 </div>
             </div>
 
